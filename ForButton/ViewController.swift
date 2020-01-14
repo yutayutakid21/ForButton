@@ -102,6 +102,8 @@ class ViewController: UIViewController {
             case 8:
                 performSegue(withIdentifier: "next", sender: nil)
                 break
+            default:
+                break
             }
         }
         
