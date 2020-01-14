@@ -23,11 +23,17 @@ class ViewController: UIViewController {
      
      */
     
+    
+    /*過去のソースコード使います*/
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    
         
-        // Do any additional setup after loading the view.
     }
 
 
