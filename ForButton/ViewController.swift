@@ -63,10 +63,11 @@ class ViewController: UIViewController {
             }
             self.view.addSubview(imageButton)
         }
-    
-        
     }
 
+    @objc func tapButton(_ sender:UIButton){
+        print(sender.tag)
+    }
 
 }
 
