@@ -10,6 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    /*
+     
+     課題
+     ・for文を用いてプログラムでUIButtonを3×3個作成し、
+     ・それぞれタップした後、
+     ・ナビゲーションコントローラーによって画面遷移を行い
+     ・遷移先画面をそれぞれ異なるbackGroundColorにしてください。
+     
+     制限:遷移先画面は1つのコントローラーで作成すること
+     
+     */
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
