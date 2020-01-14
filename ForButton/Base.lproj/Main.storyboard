@@ -14,12 +14,12 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="5Dl-oi-bIP"/>
                     <connections>
-                        <segue destination="23n-5C-Z5K" kind="show" id="PmZ-df-RkM"/>
+                        <segue destination="vCb-5f-msi" kind="show" identifier="Next" id="don-Q0-F13"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -27,20 +27,20 @@
             <point key="canvasLocation" x="1017" y="138"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="Rcq-N4-SVN">
+        <scene sceneID="Kb7-Ml-9cd">
             <objects>
-                <viewController id="23n-5C-Z5K" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HIF-CU-guY">
+                <viewController id="vCb-5f-msi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cv5-kw-ZM0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="1UM-64-C4K"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="8Pc-Pi-IHx"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mmR-WU-LlX"/>
+                    <navigationItem key="navigationItem" id="DfA-rm-Jbn"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MN7-Is-Peu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RmI-dp-muI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1904" y="138"/>
+            <point key="canvasLocation" x="1913" y="138"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QIm-aS-O5S">
