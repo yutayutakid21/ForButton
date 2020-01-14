@@ -43,7 +43,25 @@ class ViewController: UIViewController {
                 imageButton.addTarget(self, action: #selector(tapButton(_ :)), for: .touchUpInside)
                 break
                 
+            case 3,4,5:
+                imageButton.tag = i
+                imageButton.frame = CGRect(x: CGFloat(i-3) * self.view.frame.size.width/3, y: self.view.frame.size.width/3 * 2, width: self.view.frame.width/3, height: self.view.frame.size.width/3)
+                imageButton.setImage(UIImage(named: "\(i).jpg"), for: .normal)
+                imageButton.addTarget(self, action: #selector(tapButton(_ :)), for: .touchUpInside)
+                break
+                
+                
+            case 6,7,8:
+                imageButton.tag = i
+                imageButton.frame = CGRect(x: CGFloat(i-6) * self.view.frame.size.width/3, y: self.view.frame.size.width/3 * 3, width: self.view.frame.width/3, height: self.view.frame.size.width/3)
+                imageButton.setImage(UIImage(named: "\(i).jpg"), for: .normal)
+                imageButton.addTarget(self, action: #selector(tapButton(_ :)), for: .touchUpInside)
+                break
+                
+            default:
+                break
             }
+            self.view.addSubview(imageButton)
         }
     
         
