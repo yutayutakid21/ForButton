@@ -111,5 +111,10 @@ class ViewController: UIViewController {
     
     //prepareでUIColorの情報を入れて、表示した画面を変更する
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "next" {
+            let nextVC
+        }
+    }
 }
 
