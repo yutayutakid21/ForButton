@@ -27,11 +27,24 @@ class ViewController: UIViewController {
     /*過去のソースコード使います*/
     
     
-    
+    var imageButton:UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        for i in 0...8{
+            imageButton = UIButton()
+            
+            switch i {
+            case 0,1,2:
+                imageButton.tag = i
+                imageButton.frame = CGRect(x: CGFloat(i) * self.view.frame.size.width/3, y: self.view.frame.size.width/3 * 1, width: self.view.frame.width/3, height: self.view.frame.size.width/3)
+                imageButton.setImage(UIImage(named: "\(i).jpg"), for: .normal)
+                imageButton.addTarget(self, action: #selector(tapButton(_ :)), for: .touchUpInside)
+                break
+                
+            }
+        }
     
         
     }
