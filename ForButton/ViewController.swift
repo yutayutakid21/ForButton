@@ -69,9 +69,9 @@ class ViewController: UIViewController {
     @objc func tapButton(_ sender:UIButton){
         print(sender.tag)
         
-        for i in 0...8{
+//        for i in 0...8{
             
-            switch i {
+        switch sender.tag {
                 
                 
             case 0:
@@ -126,7 +126,7 @@ class ViewController: UIViewController {
             default:
                 break
             }
-        }
+//        }
         
     }
     
