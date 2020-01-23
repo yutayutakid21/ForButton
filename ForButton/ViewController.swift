@@ -75,32 +75,44 @@ class ViewController: UIViewController {
                 
                 
             case 0:
-                performSegue(withIdentifier: "next", sender: nil)
+                //画面遷移
+                let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "nextViewCotroller") as! NextViewController
+                
+                //ナビゲーションコントローラを継承しているために,こちらのコードで画面遷移できる。
+                self.navigationController?.pushViewController(nextVC, animated: true)
                 break
                 
             case 1:
-                performSegue(withIdentifier: "next", sender: nil)
+                let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "nextViewCotroller") as! NextViewController
+                self.navigationController?.pushViewController(nextVC, animated: true)
                 break
             case 2:
-                performSegue(withIdentifier: "next", sender: nil)
+                let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "nextViewCotroller") as! NextViewController
+                self.navigationController?.pushViewController(nextVC, animated: true)
                 break
             case 3:
-                performSegue(withIdentifier: "next", sender: nil)
+                let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "nextViewCotroller") as! NextViewController
+                self.navigationController?.pushViewController(nextVC, animated: true)
                 break
             case 4:
-                performSegue(withIdentifier: "next", sender: nil)
+                let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "nextViewCotroller") as! NextViewController
+                self.navigationController?.pushViewController(nextVC, animated: true)
                 break
             case 5:
-                performSegue(withIdentifier: "next", sender: nil)
+                let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "nextViewCotroller") as! NextViewController
+                self.navigationController?.pushViewController(nextVC, animated: true)
                 break
             case 6:
-                performSegue(withIdentifier: "next", sender: nil)
+                let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "nextViewCotroller") as! NextViewController
+                self.navigationController?.pushViewController(nextVC, animated: true)
                 break
             case 7:
-                performSegue(withIdentifier: "next", sender: nil)
+                let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "nextViewCotroller") as! NextViewController
+                self.navigationController?.pushViewController(nextVC, animated: true)
                 break
             case 8:
-                performSegue(withIdentifier: "next", sender: nil)
+                let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "nextViewCotroller") as! NextViewController
+                self.navigationController?.pushViewController(nextVC, animated: true)
                 break
             default:
                 break
@@ -113,7 +125,7 @@ class ViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "next" {
-            let nextVC
+            let nextVC = segue.destination as! NextViewController
         }
     }
 }
