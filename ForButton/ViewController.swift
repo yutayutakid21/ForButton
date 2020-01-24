@@ -69,52 +69,75 @@ class ViewController: UIViewController {
     @objc func tapButton(_ sender:UIButton){
         print(sender.tag)
         
-        for i in 0...8{
+//        for i in 0...8{
             
-            switch i {
+        switch sender.tag {
                 
                 
             case 0:
-                performSegue(withIdentifier: "next", sender: nil)
+                //画面遷移
+                let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "nextViewCotroller") as! NextViewController
+                nextVC.passedColor = .red
+                
+                //ナビゲーションコントローラを継承しているために,こちらのコードで画面遷移できる。
+                self.navigationController?.pushViewController(nextVC, animated: true)
                 break
                 
             case 1:
-                performSegue(withIdentifier: "next", sender: nil)
+                let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "nextViewCotroller") as! NextViewController
+                nextVC.passedColor = .black
+                self.navigationController?.pushViewController(nextVC, animated: true)
                 break
             case 2:
-                performSegue(withIdentifier: "next", sender: nil)
+                let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "nextViewCotroller") as! NextViewController
+                nextVC.passedColor = .blue
+                self.navigationController?.pushViewController(nextVC, animated: true)
                 break
             case 3:
-                performSegue(withIdentifier: "next", sender: nil)
+                let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "nextViewCotroller") as! NextViewController
+                nextVC.passedColor = .brown
+                self.navigationController?.pushViewController(nextVC, animated: true)
                 break
             case 4:
-                performSegue(withIdentifier: "next", sender: nil)
+                let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "nextViewCotroller") as! NextViewController
+                nextVC.passedColor = .cyan
+                self.navigationController?.pushViewController(nextVC, animated: true)
                 break
             case 5:
-                performSegue(withIdentifier: "next", sender: nil)
+                let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "nextViewCotroller") as! NextViewController
+                nextVC.passedColor = .darkGray
+                self.navigationController?.pushViewController(nextVC, animated: true)
                 break
             case 6:
-                performSegue(withIdentifier: "next", sender: nil)
+                let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "nextViewCotroller") as! NextViewController
+                nextVC.passedColor = .green
+                self.navigationController?.pushViewController(nextVC, animated: true)
                 break
             case 7:
-                performSegue(withIdentifier: "next", sender: nil)
+                let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "nextViewCotroller") as! NextViewController
+                nextVC.passedColor = .magenta
+                self.navigationController?.pushViewController(nextVC, animated: true)
                 break
             case 8:
-                performSegue(withIdentifier: "next", sender: nil)
+                let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "nextViewCotroller") as! NextViewController
+                nextVC.passedColor = .orange
+                self.navigationController?.pushViewController(nextVC, animated: true)
                 break
             default:
                 break
             }
-        }
+//        }
         
     }
     
     //prepareでUIColorの情報を入れて、表示した画面を変更する
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "next" {
-            let nextVC
-        }
-    }
+//
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "next" {
+//            let nextVC = segue.destination as! NextViewController
+//
+//
+//        }
+//    }
 }
 
